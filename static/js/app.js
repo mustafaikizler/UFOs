@@ -16,30 +16,32 @@ function buildTable(data) {
   
       // Loop through each field in the dataRow and add
       // each value as a table cell (td)
-      Object.values(dataRow).forEach((val) => {
-        let cell = row.append("td");
-        cell.text(val);
+      Object.values(dataRow).forEach((val) => {  // val represents each argument or value in the object
+        let cell = row.append("td"); // we'll append each value of the object to a cell in the table.
+        cell.text(val); // add values to the 
         }
       );
     });
   }
 
   function handleClick() {
-      let date = d3.select("#datetime").property("value");
+      let date = d3.select("#datetime").property("value"); //look for the datetime id (#) in the html tags .propery says:grab this informatin and 
+                                                            // store in the date variable
 
       let filteredData = tableData;
 
 
       if (date){
-          filteredData = filteredData.filter(row = > row.datetime === date);
+          filteredData = filteredData.filter(row => row.datetime === date); //row => row.datetime === date);
       };
 
       buildTable(filteredData);
       
   }
-  d3.selectAll("#filter=btn").on("click", handleClick);
+  d3.selectAll("#filter=btn").on("click", handleClick); // on click execute our handleclick function
 
   buildTable(tableData);
+
   
 
 
