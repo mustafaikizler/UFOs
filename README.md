@@ -1,11 +1,11 @@
 # UFOs 
 ## Overview of Project
-Our project was about the UFO seights and their presentation in a web page. By using our source data (data.js) we created a html file by the using Javascript. Data.js contain many object that these object contains the data such as date, location, shape and comments about the event. Our data was very long, thats why it would be hard to read all of the seights at once. In order to make the readability easier, we added a a multiple filters to our website. Next step mainly will be about filtering the data. 🔽
+Our project was about the UFO sights and their presentation on a web page. By using our source data (data.js) we created an HTML file using Javascript. Data.js contain many objects that this object contains the data such as date, location, shape, and comments about the event. Our data was very long, that's why it would be hard to read all of the sights at once. To make the readability easier, we added multiple filters to our website. The next step mainly will be about filtering the data. 🔽
 ## Result
-- First of all we added the filter (input) boxes to our HTML code.
+- First of all, we added the filter (input) boxes to our HTML code.
 ![image](https://user-images.githubusercontent.com/98247252/168511065-aa66304a-26c6-4f1f-bf9f-b647a6fe0424.png)
 
- #### Next We added function to these inout boxes on the back end.
+ #### Next We added function to these input boxes on the back end.
  - Importing the source _data_ to app.js
  ``` conts tableData = data```
  - Using d3, in order to insert - create table-data into HTML file 
@@ -56,6 +56,7 @@ if no, clean the particular filter input box.
 
 
 ## Summary
+- In case of having more than thousands of object in the data.js file. We might want to find a solution to automate ```<ul\> <li\> <label\> <input\> ``` part of the _index.html_ file. 
 
 
       
